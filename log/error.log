@@ -1,0 +1,9 @@
+2018-08-29 01:16:15.302 [critical] <0.4676.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}
+2018-08-29 01:28:26.668 [critical] <0.2193.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}
+2018-08-29 13:11:46.897 [critical] <0.8584.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}

@@ -1,0 +1,69 @@
+2018-08-29 01:16:15.240 [notice] <0.4692.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-08-29 01:16:15.240 [notice] <0.4692.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-08-29 01:16:15.302 [critical] <0.4676.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}
+2018-08-29 01:28:26.600 [notice] <0.2209.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-08-29 01:28:26.600 [notice] <0.2209.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-08-29 01:28:26.668 [critical] <0.2193.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}
+2018-08-29 13:11:46.833 [notice] <0.8600.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-08-29 13:11:46.833 [notice] <0.8600.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-08-29 13:11:46.897 [critical] <0.8584.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
+                                     {unable_to_load_nif,
+                                      {xmpp,start,[normal,[]]}}}
+2018-08-29 13:28:19.409 [notice] <0.2637.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-08-29 13:28:19.409 [notice] <0.2637.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-08-29 13:28:19.530 [info] <0.2621.0>@ejabberd_config:start:68 Loading configuration from config/ejabberd.yml
+2018-08-29 13:28:19.585 [warning] <0.2621.0>@ejabberd_config:emit_deprecation_warning:1389 Module mod_http_bind is deprecated, use mod_bosh instead
+2018-08-29 13:28:20.245 [info] <0.2765.0>@translate:load:115 Building translation cache, this may take a while
+2018-08-29 13:28:20.567 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'ejabberd_commands'
+2018-08-29 13:28:20.583 [warning] <0.2803.0>@ejabberd_pkix:check_ca:688 CA directory /etc/ssl/certs doesn't contain hashed certificate files; configuring 'ca_path' or 'ca_file' options might help
+2018-08-29 13:28:20.602 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 's2s'
+2018-08-29 13:28:20.616 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'temporarily_blocked'
+2018-08-29 13:28:20.647 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'acl'
+2018-08-29 13:28:20.661 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'access'
+2018-08-29 13:28:20.679 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'shaper'
+2018-08-29 13:28:20.696 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'route'
+2018-08-29 13:28:20.704 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'route_multicast'
+2018-08-29 13:28:20.711 [warning] <0.2803.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-08-29 13:28:20.712 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'session'
+2018-08-29 13:28:20.722 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'session_counter'
+2018-08-29 13:28:20.732 [info] <0.2759.0>@gen_mod:start_modules:130 Loading modules for localhost
+2018-08-29 13:28:20.732 [warning] <0.2759.0>@gen_mod:sort_modules:155 Module 'mod_mam' is recommended for module 'mod_muc' but is not found in the config
+2018-08-29 13:28:20.741 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'mod_register_ip'
+2018-08-29 13:28:20.750 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'sr_group'
+2018-08-29 13:28:20.760 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'sr_user'
+2018-08-29 13:28:20.770 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'muc_room'
+2018-08-29 13:28:20.779 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'muc_registered'
+2018-08-29 13:28:20.789 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'muc_online_room'
+2018-08-29 13:28:20.797 [warning] <0.2803.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'conference.localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-08-29 13:28:20.798 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'private_storage'
+2018-08-29 13:28:20.814 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'privacy'
+2018-08-29 13:28:20.846 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_last_item'
+2018-08-29 13:28:20.855 [warning] <0.2803.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'pubsub.localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-08-29 13:28:20.855 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_index'
+2018-08-29 13:28:20.865 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_node'
+2018-08-29 13:28:20.872 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_state'
+2018-08-29 13:28:20.881 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_item'
+2018-08-29 13:28:20.898 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'pubsub_orphan'
+2018-08-29 13:28:20.908 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'vcard'
+2018-08-29 13:28:20.917 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'vcard_search'
+2018-08-29 13:28:20.934 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'motd'
+2018-08-29 13:28:20.943 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'motd_users'
+2018-08-29 13:28:20.961 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'bosh'
+2018-08-29 13:28:20.970 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'roster'
+2018-08-29 13:28:20.985 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'roster_version'
+2018-08-29 13:28:21.028 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'last_activity'
+2018-08-29 13:28:21.048 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'offline_msg'
+2018-08-29 13:28:21.079 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'caps_features'
+2018-08-29 13:28:21.089 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'carboncopy'
+2018-08-29 13:28:21.097 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'passwd'
+2018-08-29 13:28:21.107 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'reg_users_counter'
+2018-08-29 13:28:21.129 [info] <0.2710.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'oauth_token'
+2018-08-29 13:28:21.172 [info] <0.2621.0>@ejabberd_cluster_mnesia:wait_for_sync:123 Waiting for Mnesia synchronization to complete
+2018-08-29 13:28:21.172 [info] <0.2621.0>@ejabberd_app:start:59 ejabberd 18.6.0 is started in the node nonode@nohost in 1.84s
+2018-08-29 13:28:21.175 [info] <0.2810.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5269 for ejabberd_s2s_in
+2018-08-29 13:28:21.175 [info] <0.2809.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5222 for ejabberd_c2s
+2018-08-29 13:28:21.175 [info] <0.2811.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5280 for ejabberd_http
