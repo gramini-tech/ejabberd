@@ -75,6 +75,7 @@ defmodule Ejabberd.Mixfile do
      {:distillery, "~> 2.0"},
      {:ex_doc, ">= 0.0.0", only: :dev},
      {:eimp, "~> 1.0"},
+     {:cqerl, github: "gramini-tech/cqerl", branch: "master"},
      {:base64url, "~> 0.0.1"},
      {:jose, "~> 1.8"}]
     ++ cond_deps()

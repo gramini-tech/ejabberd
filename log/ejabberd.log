@@ -101,3 +101,44 @@
 2018-08-29 19:45:58.026 [info] <0.2194.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at 0.0.0.0:5269 for ejabberd_s2s_in
 2018-08-29 19:45:58.026 [info] <0.2194.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at 0.0.0.0:5280 for ejabberd_http
 2018-08-29 19:45:58.044 [info] <0.2194.0>@ejabberd_app:stop:86 ejabberd 18.6.0 is stopped in the node nonode@nohost
+2018-09-12 20:13:17.036 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-09-12 20:13:17.036 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-09-12 20:13:17.097 [info] <0.2214.0>@ejabberd_config:start:68 Loading configuration from config/ejabberd.yml
+2018-09-12 20:13:17.130 [warning] <0.2214.0>@ejabberd_config:emit_deprecation_warning:1389 Module mod_http_bind is deprecated, use mod_bosh instead
+2018-09-12 20:13:17.721 [warning] <0.2458.0>@ejabberd_pkix:check_ca:688 CA directory /etc/ssl/certs doesn't contain hashed certificate files; configuring 'ca_path' or 'ca_file' options might help
+2018-09-12 20:13:17.787 [warning] <0.2458.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-09-12 20:13:17.788 [info] <0.2435.0>@gen_mod:start_modules:130 Loading modules for localhost
+2018-09-12 20:13:17.788 [warning] <0.2435.0>@gen_mod:sort_modules:155 Module 'mod_mam' is recommended for module 'mod_muc' but is not found in the config
+2018-09-12 20:13:17.795 [warning] <0.2458.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'conference.localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-09-12 20:13:17.824 [warning] <0.2458.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'pubsub.localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-09-12 20:13:17.944 [info] <0.2214.0>@ejabberd_cluster_mnesia:wait_for_sync:123 Waiting for Mnesia synchronization to complete
+2018-09-12 20:13:17.944 [info] <0.2214.0>@ejabberd_app:start:59 ejabberd 18.6.0 is started in the node nonode@nohost in 0.98s
+2018-09-12 20:13:17.948 [info] <0.2466.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5280 for ejabberd_http
+2018-09-12 20:13:17.948 [info] <0.2465.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5269 for ejabberd_s2s_in
+2018-09-12 20:13:17.948 [info] <0.2464.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at 0.0.0.0:5222 for ejabberd_c2s
+2018-09-12 20:13:59.884 [info] <0.2214.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at 0.0.0.0:5222 for ejabberd_c2s
+2018-09-12 20:13:59.884 [info] <0.2214.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at 0.0.0.0:5269 for ejabberd_s2s_in
+2018-09-12 20:13:59.884 [info] <0.2214.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at 0.0.0.0:5280 for ejabberd_http
+2018-09-12 20:13:59.892 [info] <0.2214.0>@ejabberd_app:stop:86 ejabberd 18.6.0 is stopped in the node nonode@nohost
+2018-09-12 20:17:14.998 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-09-12 20:17:14.998 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-09-12 20:17:15.051 [info] <0.2214.0>@ejabberd_config:start:68 Loading configuration from config/ejabberd.yml
+2018-09-12 20:17:15.610 [warning] <0.2458.0>@ejabberd_pkix:check_ca:688 CA directory /etc/ssl/certs doesn't contain hashed certificate files; configuring 'ca_path' or 'ca_file' options might help
+2018-09-12 20:17:15.624 [warning] <0.2458.0>@ejabberd_pkix:get_certfiles_from_config_options:315 Path /etc/letsencrypt/live/*/*.pem is empty, please make sure ejabberd has sufficient rights to read it
+2018-09-12 20:17:15.674 [warning] <0.2458.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-09-12 20:17:15.675 [info] <0.2435.0>@gen_mod:start_modules:130 Loading modules for localhost
+2018-09-12 20:17:15.703 [critical] <0.2435.0>@gen_mod:start_module:227 Failed to start unknown module mod_vrecho: make sure there is no typo and mod_vrecho.beam exists inside either /Users/vipinravindran/Work/gram/step/ejabberd/_build/dev/lib/ejabberd/ebin or /Users/vipinravindran/.ejabberd-modules directory
+2018-09-12 20:17:15.703 [critical] <0.2435.0>@gen_mod:maybe_halt_ejabberd:310 ejabberd initialization was aborted because a module start failed.
+2018-09-12 20:17:54.128 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/error.log to 100
+2018-09-12 20:17:54.128 [notice] <0.2230.0>@lager_file_backend:146 Changed loghwm of log/ejabberd.log to 100
+2018-09-12 20:17:54.190 [info] <0.2214.0>@ejabberd_config:start:68 Loading configuration from config/ejabberd.yml
+2018-09-12 20:17:54.746 [warning] <0.2458.0>@ejabberd_pkix:check_ca:688 CA directory /etc/ssl/certs doesn't contain hashed certificate files; configuring 'ca_path' or 'ca_file' options might help
+2018-09-12 20:17:54.761 [warning] <0.2458.0>@ejabberd_pkix:get_certfiles_from_config_options:315 Path /etc/letsencrypt/live/*/*.pem is empty, please make sure ejabberd has sufficient rights to read it
+2018-09-12 20:17:54.798 [warning] <0.2458.0>@ejabberd_pkix:handle_call:259 No certificate found matching 'localhost': strictly configured clients or servers will reject connections with this host; obtain a certificate for this (sub)domain from any trusted CA such as Let's Encrypt (www.letsencrypt.org)
+2018-09-12 20:17:54.799 [info] <0.2435.0>@gen_mod:start_modules:130 Loading modules for localhost
+2018-09-12 20:17:54.819 [info] <0.2303.0>@ejabberd_mnesia:create:278 Creating Mnesia table 'push_session'
+2018-09-12 20:17:54.898 [info] <0.2214.0>@ejabberd_cluster_mnesia:wait_for_sync:123 Waiting for Mnesia synchronization to complete
+2018-09-12 20:17:54.898 [info] <0.2214.0>@ejabberd_app:start:59 ejabberd 18.6.0 is started in the node nonode@nohost in 0.84s
+2018-09-12 20:17:54.901 [info] <0.2464.0>@ejabberd_listener:init_tcp:139 Start accepting TCP connections at [::]:5222 for ejabberd_c2s
+2018-09-12 20:19:03.610 [info] <0.2214.0>@ejabberd_listener:stop_listener:357 Stop accepting TCP connections at [::]:5222 for ejabberd_c2s
+2018-09-12 20:19:03.617 [info] <0.2214.0>@ejabberd_app:stop:86 ejabberd 18.6.0 is stopped in the node nonode@nohost

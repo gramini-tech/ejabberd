@@ -7,3 +7,5 @@
 2018-08-29 13:11:46.897 [critical] <0.8584.0>@ejabberd:exit_or_halt:137 failed to start application 'xmpp': {error,
                                      {unable_to_load_nif,
                                       {xmpp,start,[normal,[]]}}}
+2018-09-12 20:17:15.703 [critical] <0.2435.0>@gen_mod:start_module:227 Failed to start unknown module mod_vrecho: make sure there is no typo and mod_vrecho.beam exists inside either /Users/vipinravindran/Work/gram/step/ejabberd/_build/dev/lib/ejabberd/ebin or /Users/vipinravindran/.ejabberd-modules directory
+2018-09-12 20:17:15.703 [critical] <0.2435.0>@gen_mod:maybe_halt_ejabberd:310 ejabberd initialization was aborted because a module start failed.
