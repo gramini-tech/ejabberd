@@ -10,6 +10,16 @@ provide exceptional standards of fault tolerance. As an open source
 technology, based on industry-standards, ejabberd can be used to build bespoke
 solutions very cost effectively.
 
+For the current version, first build using rebar 3 
+
+```
+./autogen.sh
+./configure --prefix=$HOME/my-ejabberd --enable-elixir
+make 
+
+mix deps.get
+iex -S mix
+````
 
 Key Features
 ------------
