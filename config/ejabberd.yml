@@ -28,12 +28,18 @@
 
 hosts:
   - "localhost"
+  - "glitch.im"
 
 loglevel: 4
 log_rotate_size: 10485760
 log_rotate_date: ""
 log_rotate_count: 1
 log_rate_limit: 100
+
+### DB settings : 
+cassandra_server: "localhost"
+cassandra_port: 9042
+cassandra_keyspace: "step"
 
 certfiles:
   - "/etc/letsencrypt/live/*/*.pem"

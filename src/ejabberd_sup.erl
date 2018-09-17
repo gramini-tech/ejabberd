@@ -58,6 +58,7 @@ init([]) ->
 	   supervisor(ejabberd_rdbms),
 	   supervisor(ejabberd_riak_sup),
 	   supervisor(ejabberd_redis_sup),
+	   supervisor(ejabberd_cassandra_sup),
 	   worker(ejabberd_iq),
 	   worker(ejabberd_router),
 	   worker(ejabberd_router_multicast),

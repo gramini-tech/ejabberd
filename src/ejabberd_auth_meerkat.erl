@@ -30,9 +30,14 @@
 
 -behaviour(ejabberd_auth).
 
--export([start/1, stop/1, check_password/4,
+-include("logger.hrl").
+-include("meerkat.hrl").
+
+-export([start/1, stop/1, check_password/4, use_cache/1,
 	 user_exists/2, store_type/1, plain_password_required/1,
 	 opt_type/1]).
+
+-export([prepared_queries/0]).
 
 start(_Host) ->
     ok.
@@ -40,16 +45,38 @@ start(_Host) ->
 stop(_Host) ->
     ok.
 
+use_cache(Host) ->
+    false.
+
 check_password(User, AuthzId, Host, Password) ->
-    if AuthzId /= <<>> andalso AuthzId /= User ->
+    ?INFO_MSG("Got User ~p, AuthzId ~p, Host ~p, Password ~p",[User, AuthzId, Host, Password]),
+    if AuthzId /= <<>> ->
+        {ok, Row} = ejabberd_cassandra:cql_read_one(?MODULE, get_user, [{user_jid, ?JID_UDT(User, Host)}]),
+        if length(Row) > 0 -> 
+            true;
+        true ->
+            false 
+        end;
+    true ->
         false
     end.
 
-user_exists(User, Host) -> false.
+user_exists(User, Host) -> 
+    {ok, Row} = ejabberd_cassandra:cql_read_one(?MODULE, get_user, [{user_jid, ?JID_UDT(User, Host)}]),
+    if length(Row) > 0 -> 
+        true;
+    true ->
+        false 
+    end.
 
 plain_password_required(_) -> true.
 
 store_type(_) -> external.
+
+prepared_queries() ->
+    [{get_users, "select * from user;"},
+     {get_user, "select * from user where user_jid= ?;"}
+    ].
 
 %%====================================================================
 %% Internal functions
